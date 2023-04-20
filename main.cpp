@@ -23,13 +23,9 @@ int main(){
   vector<string> contents;
   string line;
 
-  // while(!iFile.eof()){
-  //   getline(iFile, line);
-  //   cout << line << endl;
-  //   contents.push_back(line);
-    
-  // }
-  
+  while (getline(iFile, line)){
+    contents.push_back(line);
+  }
 
   iFile.close();
 
